@@ -1,20 +1,37 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "montserrat", sans-serif;
     margin: 0px;
     font-size: 1.5vw;
+    color: black;
+    background-color: white;
 }
+
+.sedgwick-ave-regular {
+    font-family: "Sedgwick Ave", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
 #logo {
     margin: 0px;
     padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
+    font-family: "Merriweather", sans-serif;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-shadow: 2px 2px 4px #6f6554;
+    margin-bottom: 20%;
+    margin-top: 20%;
+    margin-left: -13%;
+    display: flex;
+    width: 20%;
     border-radius: 25%;
-    text-shadow: 
-    -1px -1px 0 black,  
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
+}
+
+article {
+    padding: 40px;
+    margin: 40px auto;
+    width: 60%;
 }
 
 ul {
@@ -22,8 +39,8 @@ ul {
 }
 
 body > header {
-    background-color: orange;
-    color: antiquewhite;
+    background-color: white;
+    color: black;
     display: flex;
     height: 12vh;
     align-items: center;
@@ -32,6 +49,7 @@ body > header {
 
 #nav-ul {
     display: flex;
+    color: black;
 }
 
 #nav-ul > li {
@@ -39,31 +57,38 @@ body > header {
     margin: 16px;
 }
 
-body > header > nav > ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.navbutton {
-    color: white;
-    text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 12%;
-
-}
-
 #main-content {
     display: flex;
     justify-content: space-around;
+    margin-left: 5%;
 }
 
 #main-content > div {
     width: 70%;
+    list-style: none;
+    text-decoration: none;
 }
 
 body > main article {
     width: 60%;
+    margin: auto;
+}
+
+body > header > nav > ul {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.navbutton {
+    color: black;
+    text-decoration: none;
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body > main > article {
+    width: 70%;
     margin: auto;
 }
 
@@ -76,15 +101,13 @@ h2 {
 }
 
 body > footer {
-    background-color:orange;
-    padding: 5px;
+    background-color: white;
+    padding: 20px;
     display: flex;
+    color: black;
 
 }
 
-img {
-    border-radius: 10%;
-}
 
 #footer-ul {
     display: flex;
@@ -96,6 +119,116 @@ img {
 }
 
 #footer-ul > div> li > a{
-    color: white;
+    color: black;
     text-decoration: none;
+    padding: 2%;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.navbutton {
+    text-decoration: none;
+    color: black;
+}
+
+.feed-background {
+    width: auto;
+    margin: 0 auto;
+}
+
+.background-box {
+    font-family: "lora", sans-serif;
+    background-color: #f4c2c2;
+    color: #fffdd0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+.background-box2 {
+    font-family: "Sedgwick Ave", sans-serif;
+    background-color: black;
+    color: #cf000f;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    width: 80%;
+
+}
+
+.background-box3 {
+    font-family: "playfair", sans-serif;
+    background-color: #779be7;
+    color: #f2a67b;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    width: 80%;
+}
+
+.footer_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "montserrat", sans-serif;
+    color: #b7a68d;
+}
+
+.vertical_hr {
+    width: 2px;
+    height: 100px;
+    background-color: black;
+    border: none;
+}
+
+#main-content {
+    display: flex;
+}
+
+#main-content {
+    display: flex;
+    position: relative;
+}
+
+aside {
+    width: 30%; /* Width of the sidebar */
+    padding-right: 20px;
+}
+
+article {
+    width: 100%; /* Width of the main article content */
+    margin: auto;
+    padding-left: 20px;
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* The vertical line between aside and article */
+.vertical-line {
+    border-left: 1px solid #6f6554; /* Adjust the thickness and color as needed */
+    height: calc(100% + 0.9%); /* Adjust this to increase height, e.g., to extend past main content */
+    position: absolute;
+    left: 25%; /* Positioning the line between the aside and article */
+    top: -0.4%; /* Ensure the line starts from the top */
+    bottom: 50%;
+}
+
+hr {
+    height: 1px; /* Sets thickness to 2 pixels */
+    background-color: #6f6554; /* Sets color to black */
+    border: none; /* Removes default border styling */
+}
+
+@media (max-width: 768px) {
+    article {
+        width: 100%; /* Full width on smaller screens */
+    }
 }
