@@ -213,22 +213,22 @@ article img {
 
 /* The vertical line between aside and article */
 .vertical-line {
-    border-left: 1px solid #6f6554; /* Adjust the thickness and color as needed */
-    height: calc(100% + 0.9%); /* Adjust this to increase height, e.g., to extend past main content */
+    border-left: 1px solid #6f6554;
+    height: calc(100% + 0.9%);
     position: absolute;
-    left: 25%; /* Positioning the line between the aside and article */
-    top: -0.4%; /* Ensure the line starts from the top */
+    left: 25%;
+    top: -0.4%;
     bottom: 50%;
 }
 
 hr {
-    height: 1px; /* Sets thickness to 2 pixels */
-    background-color: #6f6554; /* Sets color to black */
-    border: none; /* Removes default border styling */
+    height: 1px;
+    background-color: #6f6554;
+    border: none;
 }
 
 @media (max-width: 768px) {
     article {
-        width: 100%; /* Full width on smaller screens */
+        width: 100%;
     }
 }
