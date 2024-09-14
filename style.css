@@ -229,6 +229,9 @@ hr {
 
 @media (max-width: 768px) {
     article {
-        width: 100%;
+        width: 50%;
+        margin-left: 0%;
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
 }
